@@ -1,16 +1,76 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'EBGaramond';
+    src: url('/fonts/EBGaramond/EBGaramond-VariableFont_wght.ttf') format("truetype-variations");
+    font-style: normal;
+    font-weight: 1 999;
+  }
+  @font-face {
+    font-family: 'EBGaramond';
+    src: url('/fonts/EBGaramond/EBGaramond-Italic-VariableFont_wght.ttf') format("truetype-variations");
+    font-style: italic;
+    font-weight: 1 999;
+  }
+  body {
+    background: theme('colors.gray.50');
+    color: theme('colors.gray.800');
+  }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@layer components {
+  .timeline {
+    position: absolute;
+    display: block;
+    overflow: visible;
+    right: 0;
+    top: 50%;
+    width: 150vw;
+    height: 0;
+    transform: translateY(-50%) translateX(-1rem);
+    border-bottom: solid theme('borderWidth.2') theme('borderColor.green.600');
+  }
+  .timeline::before {
+    content: '7 years and counting';
+    position: absolute;
+    display: inline-block;
+    font-size: theme('fontSize.xs');
+    text-transform: uppercase;
+    font-family: theme('fontFamily.serif');
+    font-style: italic;
+    color: theme('colors.green.700');
+    background: theme('colors.gray.50');
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) translateX(50%) rotate(90deg);
+    padding: theme('spacing.1');
+    border-bottom: solid theme('borderWidth.2') theme('borderColor.green.600');
+  }
 }
 
-* {
-  box-sizing: border-box;
+@layer utilities {
+  .bg-blur {
+    backdrop-filter: blur(5px);
+  }
+  .drop-cap {
+    float: left;
+    font-size: theme('fontSize.6xl');
+    font-weight: theme('fontWeight.bold');
+    line-height: 0.9;
+    padding-right: theme('spacing.2');
+  }
+  .columns-2 {
+    column-count: 1;
+    column-gap: theme('spacing.12');
+  }
+  @screen lg {
+    .columns-2 {
+      column-count: 2;
+    }
+  }
 }
