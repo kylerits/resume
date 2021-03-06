@@ -1,7 +1,6 @@
 import JobTile from './JobTile';
 
-const Experience = () => {
-    const experience = [
+const experience = [
         {
             title: 'Frontend Developer',
             company: 'BIG [Brand Innovation Group]',
@@ -31,11 +30,13 @@ const Experience = () => {
         },
     ]
 
+const Experience = () => {
     const ExperienceLoop = () => Object.keys(experience).map(key => <JobTile key={key} details={experience[key]} />)
+    
     return ( 
-        <section className="py-10 lg:py-16 relative overflow-hidden">
+        <section className="relative py-10 overflow-hidden lg:py-16">
             <div className="container">
-                <h2 className="text-8xl lg:pl-16 font-bold text-green-600 opacity-50 relative -mb-6">Experience</h2>
+                <h2 className="relative font-bold text-green-600 opacity-50 text-8xl lg:pl-16">Experience</h2>
                 <div className="relative flex flex-wrap items-start">
                     <div className="timeline"></div>
                     <ExperienceLoop className="relative" />
