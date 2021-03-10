@@ -4,6 +4,7 @@ import Intro from '../components/Intro'
 import Experience from '../components/Experience'
 import Tech from '../components/Tech'
 import Contact from '../components/Contact'
+import Projects from '../components/Projects'
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         <Greeting />
         <Intro />
         <Experience />
+        <Projects />
         <Tech />
         <Contact />
       </main>
