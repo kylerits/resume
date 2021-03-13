@@ -1,5 +1,4 @@
 import TechList from "./TechList";
-import dynamic from 'next/dynamic';
 
 const langList = [
     {
