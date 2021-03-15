@@ -28,8 +28,8 @@ export default function Home() {
       <main id="pageWrap" className="pb-12">
         <Greeting />
         <Intro />
-        <Experience />
         <Projects />
+        <Experience />
         <Tech />
         <Contact />
       </main>
