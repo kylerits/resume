@@ -14,6 +14,20 @@ module.exports = {
               },
             },
           }]
+        },
+        lg: {
+          css: [{
+            h1: {
+              marginBottom: '0px',
+            },
+            p: {
+              'lead': {
+                'lead': {
+                  marginTop: '0px',
+                },
+              }
+            }
+          }]
         }
       }),
       colors: {

@@ -34,7 +34,7 @@ const Experience = () => {
     const ExperienceLoop = () => Object.keys(experience).map(key => <JobTile key={key} details={experience[key]} />)
     
     return ( 
-        <section className="relative py-10 overflow-hidden lg:py-16">
+        <div className="relative py-10 overflow-hidden lg:py-16">
             <div className="container">
                 <h2 className="relative font-bold text-green-600 opacity-50 text-8xl lg:pl-16">Experience</h2>
                 <div className="relative flex flex-wrap items-start">
@@ -42,7 +42,7 @@ const Experience = () => {
                     <ExperienceLoop className="relative" />
                 </div>
             </div>
-        </section>
+        </div>
     );
 }
 

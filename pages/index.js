@@ -5,6 +5,7 @@ import Experience from '../components/Experience'
 import Tech from '../components/Tech'
 import Contact from '../components/Contact'
 import Projects from '../components/Projects'
+import PageNav from '../components/PageNav'
 
 export default function Home() {
   return (
@@ -26,13 +27,14 @@ export default function Home() {
           />
       </Head>
       <main id="pageWrap" className="pb-12">
-        <Greeting />
-        <Intro />
-        <Projects />
-        <Experience />
-        <Tech />
-        <Contact />
+        <section id="greeting"><Greeting /></section>
+        <section id="intro"><Intro /></section>
+        <section id="projects"><Projects /></section>
+        <section id="experience"><Experience /></section>
+        <section id="tech"><Tech /> </section>
+        <section id="contact"><Contact /></section>
       </main>
+      <PageNav />
     </>
   );
 }
