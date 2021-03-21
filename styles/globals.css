@@ -59,6 +59,13 @@
   .bg-blur {
     backdrop-filter: blur(5px);
   }
+  .bg-gradient-overlay {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.2), rgba(0,0,0,0.3), rgba(0,0,0,0.6), rgba(0,0,0,0.7) );
+  }
+  .shadow-image {
+    filter: blur(30px);
+    transform: scale(0.9) translateY(0.5rem);
+  }
   .drop-cap {
     float: left;
     font-size: theme('fontSize.6xl');

@@ -3,7 +3,7 @@ import ProjectsList from "./ProjectsList";
 const list = [
     {
         title: 'Agency Portfolio',
-        company: 'BIG [Brand Innovation Group',
+        company: 'BIG [Brand Innovation Group]',
         url: 'https://www.gotobig.com/',
         image: '/images/projects/big-meta.jpeg',
         desc: '',
