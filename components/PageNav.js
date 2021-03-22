@@ -1,63 +1,36 @@
-import {Link, animateScroll as scroll} from 'react-scroll'
+import NavItem from '../components/NavItem';
 
 const PageNav = () => {
+    const navList = [
+        {
+            id: 'greeting',
+            title: 'Greeting',
+        },
+        {
+            id: 'intro',
+            title: 'Introduction',
+        },
+        {
+            id: 'projects',
+            title: 'Projects',
+        },
+        {
+            id: 'experience',
+            title: 'Experience',
+        },
+        {
+            id: 'tech',
+            title: 'Technology',
+        },
+        {
+            id: 'contact',
+            title: 'Contact',
+        },
+    ]
     return ( 
         <>
-            <ul className="fixed top-0 right-0 p-5 text-right">
-                <li className="block"><Link 
-                to="greeting" 
-                className="relative flex items-center cursor-pointer spy-link"
-                activeClass="is-current"
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={400}
-                ><span className="spy-text">Greeting</span></Link></li>
-                <li className="block"><Link 
-                to="intro" 
-                className="relative flex items-center cursor-pointer spy-link"
-                activeClass="is-current"
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={400}
-                ><span className="spy-text">Introduction</span></Link></li>
-                <li className="block"><Link 
-                to="projects" 
-                className="relative flex items-center cursor-pointer spy-link"
-                activeClass="is-current"
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={400}
-                ><span className="spy-text">Projects</span></Link></li>
-                <li className="block"><Link 
-                to="experience" 
-                className="relative flex items-center cursor-pointer spy-link"
-                activeClass="is-current"
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={400}
-                ><span className="spy-text">Experience</span></Link></li>
-                <li className="block"><Link 
-                to="tech" 
-                className="relative flex items-center cursor-pointer spy-link"
-                activeClass="is-current"
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={400}
-                ><span className="spy-text">Technology</span></Link></li>
-                <li className="block"><Link 
-                to="contact" 
-                className="relative flex items-center cursor-pointer spy-link"
-                activeClass="is-current"
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={400}
-                ><span className="spy-text">Contact</span></Link></li>
+            <ul className="fixed top-0 right-0 flex flex-col items-end p-5">
+                {Object.keys(navList).map(key => <NavItem key={key} id={navList[key].id} title={navList[key].title} />)}
             </ul>
         </> 
     );

@@ -53,19 +53,26 @@
     padding: theme('spacing.1');
     border-bottom: solid theme('borderWidth.2') theme('borderColor.green.600');
   }
+  /* Spy Link */
   .spy-link {
-    &::before {
-      content: '';
-      width: 100%;
-      height: 0;
-      border-bottom: solid 1px theme('colors.red.600');
-    }
-    &::after {
-      content: '';
-      width: 100%;
-      height: 0;
-      border-bottom: solid 1px theme('colors.red.600');
-    }
+    width: 2rem;
+    transition: all 200ms;
+  }
+  .spy-link .spy-line {
+    width: 100%;
+    height: 0;
+    border-bottom: solid 1px theme('colors.red.700');
+    transition: all 300ms;
+  }
+  .spy-link.is-current {
+    width: 3.5rem;
+    color: theme('colors.red.700');
+  }
+  .spy-link.is-current .spy-line-before {
+    width: 0;
+  }
+  .spy-link.is-current .spy-line-after {
+    width: 100%;
   }
 }
 
