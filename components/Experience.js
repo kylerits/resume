@@ -31,12 +31,12 @@ const experience = [
     ]
 
 const Experience = () => {
-    const ExperienceLoop = () => Object.keys(experience).map(key => <JobTile key={key} details={experience[key]} />)
+    const ExperienceLoop = () => Object.keys(experience).map(key => <JobTile key={key} details={experience[key]} index={key} />)
     
     return ( 
         <div className="relative py-10 overflow-hidden lg:py-16">
             <div className="container">
-                <h2 className="relative font-bold text-green-600 opacity-50 text-8xl lg:pl-16">Experience</h2>
+                <h2 className="relative font-bold text-indigo-600 opacity-50 text-8xl lg:pl-16">Experience</h2>
                 <div className="relative flex flex-wrap items-start">
                     <div className="timeline"></div>
                     <ExperienceLoop className="relative" />

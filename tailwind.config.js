@@ -13,6 +13,14 @@ module.exports = {
                 marginBottom: theme('spacing.8'),
               },
             },
+            a: {
+              color: theme('colors.red.600'),
+              fontWeight: 'bold',
+              transition: 'all 300ms',
+              '&:hover': {
+                color: theme('colors.red.700'),
+              }
+            }
           }]
         },
         lg: {

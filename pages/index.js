@@ -33,6 +33,13 @@ export default function Home() {
         <section id="experience"><Experience /></section>
         <section id="tech"><Tech /> </section>
         <section id="contact"><Contact /></section>
+
+        {/* Footer */}
+        <footer className="relative block">
+          <div className="mx-auto prose-sm prose">
+            <p className="text-center">All material &copy; Kyle Rodgers 2021</p>
+          </div>
+        </footer>
       </main>
       <PageNav />
     </>
