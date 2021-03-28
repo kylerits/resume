@@ -9,6 +9,7 @@ module.exports = {
             p: {
               fontFamily: theme('fontFamily.serif'),
               marginTop: '0px',
+              fontSize: theme('fontSize.lg'),
               '&:not(last-child)': {
                 marginBottom: theme('spacing.8'),
               },

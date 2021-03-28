@@ -12,7 +12,7 @@ const ProjectTile = (props) => {
                     delay={0.1*props.index}
                     ease="back.out(1.2)"
                 >
-                    <div className="relative max-w-sm pb-4 pr-4 tile-wrap lg:pr-8 lg:pb-8">
+                    <div className="relative w-full max-w-sm pb-4 pr-4 lg:w-auto tile-wrap lg:pr-8 lg:pb-8">
                         <div className="relative">
                             {image.length > 0 ? <><div className="absolute inset-0 rounded-lg shadow-image"><Image src={image} layout="fill" className="object-cover w-full h-full" alt={title} /></div></> : null }
                             <a href={url} className="relative block overflow-hidden text-gray-100 duration-300 transform translate-y-0 job-tile rounded-xl bg-opacity-60 bg-blur project-tile hover:-translate-y-2" target="_blank" rel="noreferrer">

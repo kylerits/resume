@@ -24,34 +24,36 @@
 }
 
 @layer components {
-  .timeline {
-    position: absolute;
-    display: block;
-    overflow: visible;
-    right: 0;
-    top: 50%;
-    width: 150vw;
-    height: 0;
-    transform: translateY(-50%) translateX(-1rem);
-    border-bottom: solid theme('borderWidth.2') theme('borderColor.green.600');
-  }
-  .timeline::before {
-    content: '7 years and counting';
-    position: absolute;
-    display: inline-block;
-    font-size: theme('fontSize.xs');
-    text-transform: uppercase;
-    font-family: theme('fontFamily.serif');
-    font-style: italic;
-    color: theme('colors.green.700');
-    background: theme('colors.gray.50');
-    font-weight: bold;
-    letter-spacing: 0.8px;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%) translateX(50%) rotate(90deg);
-    padding: theme('spacing.1');
-    border-bottom: solid theme('borderWidth.2') theme('borderColor.green.600');
+  @screen lg {
+    .timeline {
+      position: absolute;
+      display: block;
+      overflow: visible;
+      right: 0;
+      top: 50%;
+      width: 150vw;
+      height: 0;
+      transform: translateY(-50%) translateX(-1rem);
+      border-bottom: solid theme('borderWidth.2') theme('borderColor.green.600');
+    }
+    .timeline::before {
+      content: '7 years and counting';
+      position: absolute;
+      display: inline-block;
+      font-size: theme('fontSize.xs');
+      text-transform: uppercase;
+      font-family: theme('fontFamily.serif');
+      font-style: italic;
+      color: theme('colors.green.700');
+      background: theme('colors.gray.50');
+      font-weight: bold;
+      letter-spacing: 0.8px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%) translateX(50%) rotate(90deg);
+      padding: theme('spacing.1');
+      border-bottom: solid theme('borderWidth.2') theme('borderColor.green.600');
+    }
   }
   /* Spy Link */
   .spy-link {
@@ -81,7 +83,12 @@
     backdrop-filter: blur(5px);
   }
   .bg-gradient-overlay {
-    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.2), rgba(0,0,0,0.3), rgba(0,0,0,0.6), rgba(0,0,0,0.7) );
+      background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5), rgba(0,0,0,0.6), rgba(0,0,0,0.8), rgba(0,0,0,0.9) );
+    }
+  @screen lg {
+    .bg-gradient-overlay {
+      background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.2), rgba(0,0,0,0.3), rgba(0,0,0,0.6), rgba(0,0,0,0.7) );
+    }
   }
   .shadow-image {
     filter: blur(30px);

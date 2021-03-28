@@ -29,7 +29,7 @@ const PageNav = () => {
     ]
     return ( 
         <>
-            <ul className="fixed top-0 right-0 flex flex-col items-end p-5">
+            <ul className="fixed top-0 right-0 flex-col items-end hidden p-5 lg:flex">
                 {Object.keys(navList).map(key => <NavItem key={key} id={navList[key].id} title={navList[key].title} />)}
             </ul>
         </> 
