@@ -51,13 +51,13 @@ export default function Home() {
             crossOrigin=""
           />
       </Head>
-      <main id="pageWrap" className="pb-12">
-        <section id="greeting"><Greeting /></section>
-        <section id="intro"><Intro /></section>
-        <section id="projects"><Projects /></section>
-        <section id="experience"><Experience /></section>
-        <section id="tech"><Tech /> </section>
-        <section id="contact"><Contact /></section>
+      <main id="pageWrap" className="relative pb-12">
+        <section id="greeting" className="relative"><Greeting /></section>
+        <section id="intro" className="relative"><Intro /></section>
+        <section id="projects" className="relative"><Projects /></section>
+        <section id="experience" className="relative"><Experience /></section>
+        <section id="tech" className="relative"><Tech /> </section>
+        <section id="contact" className="relative"><Contact /></section>
 
         {/* Footer */}
         <footer className="relative block">
