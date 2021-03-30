@@ -1,34 +1,54 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+[![Netlify Status](https://api.netlify.com/api/v1/badges/993bec73-87ac-47e8-a3f1-fb2439dfaa31/deploy-status)](https://app.netlify.com/sites/krresume/deploys)
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+# Hello there.
+My name is Kyle Rodgers. I spend most of my life in front of a computer screen. Some of that time is spent on building things.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+------
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+For the better part of a decade I have been building websites. When I went to college at Indiana University, my intention was to make videos. Since I spent most of my energy either editing or creating motion graphics, I decided to turn my attention to the courses in the School of Informatics and Computing. Here I learned introductory backend coding with Python, data modeling and querying with MySQL and was introduced to human-computer interaction design which explained the fundamentals of UI and UX. I felt drawn to user experience design as it pertains ot the web and have since focused primarily on frontend web development.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+After I graduated in the winter of 2014, I got a job building websites for a small SEO company. We built quick turn websites in WordPress. I was given time and space to learn and develop, taking courses in PHP and Javascript through Codecademy and Team Tree House. I built custom WordPress themes and started playing with the frontend javascript framework Vue.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+In 2017 I started working at a local branding agency on their digital team. We build large scale websites and web applications with the purpose of effectively communicating a clients brand in the digital space. The primary technologies we work with is Craft CMS to handle data and client content/data entry, and lately Vue to handle more complicated frontend user interaction.
 
-## Learn More
+I have learned a lot and forgotten half as much in this environment where every new day could see a new game-changing technology. I remember how revolutionary it felt to manage packages with Bower and compile them with Gulp, but now I run everything through NPM and Webpack. Recently I have played with Vite and time will tell whether or not that has legs. I pride myself in my ability to learn and adapt. I am hungry to learn more.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Projects
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [Agency Portfolio](https://www.gotobig.com/) | BIG [Brand Innovation Group]
+- [Partnership Website](https://www.thelutheranschools.org/) | The Lutheran Schools Partnership
+- [Breads to Live By.](https://live.auntmillies.com/) | Aunt Millie's
+- [Look Up](https://lookupindiana.org/) | The Lutheran Foundation
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Experience
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Frontend Developer**
+*BIG [Brand Innovation Group] • Fort Wayne, IN*
+*Aug 2017–Present*
+Working in collaboration with a team of designers and developers to bring to life beautiful digital solutions for clients across multiple industries.
+
+**Freelance Developer**
+*Self Employed • Fort Wayne, IN*
+*Nov 2019–Present*
+Taking on a variety of projects from full design and development of a company's website to supporting local agencies with their development needs.
+
+**Web Designer/Developer**
+*Lewis SEO • Fort Wayne, IN*
+*Jun 2013-Aug 2017*
+Designing and building websites for a wide variety of clients with strict goals of SEO.
+
+---
+
+## Contact
+
+I am most accessible through my email [kyle.rits.rodgers at gmail.com](mailto:kyle.rits.rodgers@gmail.com). I am available for freelance web development with any inquiries directed to [my personal website](https://kylerodgers.me/).
+
+I am social on [Twitter](https://twitter.com/kyle_rits), [Instagram](https://twitter.com/https://www.instagram.com/kyle_rits/) and [LinkedIn](https://www.linkedin.com/in/kyleritschardrodgers/).
+
