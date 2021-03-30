@@ -1,7 +1,5 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/993bec73-87ac-47e8-a3f1-fb2439dfaa31/deploy-status)](https://app.netlify.com/sites/krresume/deploys)
-
 
 # Hello there.
 My name is Kyle Rodgers. I spend most of my life in front of a computer screen. Some of that time is spent on building things.
