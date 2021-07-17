@@ -3,6 +3,14 @@ import { Reveal, Tween } from 'react-gsap';
 // import { Parallax, Background } from 'react-parallax';
 import Tooltip from './Tooltip';
 
+// Images
+import winter from '../public/images/winter.png';
+import kayak from '../public/images/kayak.png';
+import newt from '../public/images/newt.png';
+import selfie from '../public/images/kyle-selfie.png';
+
+
+
 const Greeting = () => {
     return ( 
         <div className="relative">
@@ -19,9 +27,9 @@ const Greeting = () => {
                                     ease="back.out(1.2)"
                                 >
                                     <div className="absolute top-0 left-0 hidden w-40 h-40 lg:block " style={{ transform: 'translate(-20%, -70%)' }}>
-                                        <div className="absolute inset-0 rounded-lg shadow-image"><Image src="/images/winter.png" layout="fill" alt="Winter" /></div>
+                                        <div className="absolute inset-0 rounded-lg shadow-image"><Image src={winter} layout="fill" alt="Winter" placeholder="blur" /></div>
                                         <div className="relative w-full h-full overflow-hidden rounded-lg ring-8 ring-indigo-600">
-                                            <Image src="/images/winter.png" alt="Winter" layout="fill" />
+                                            <Image src={winter} alt="Winter" layout="fill" placeholder="blur" />
                                         </div>
                                     </div>
                                 </Tween>
@@ -32,9 +40,9 @@ const Greeting = () => {
                                     ease="back.out(1.2)"
                                 >
                                     <div className="absolute top-0 hidden w-48 h-48 lg:block left-1/2" style={{ transform: 'translate(50px, -130px)' }}>
-                                        <div className="absolute inset-0 rounded-lg shadow-image"><Image src="/images/kayak.png" layout="fill" alt="Kayak" /></div>
+                                        <div className="absolute inset-0 rounded-lg shadow-image"><Image src={kayak} layout="fill" alt="Kayak" /></div>
                                         <div className="relative w-full h-full overflow-hidden rounded-lg ring-8 ring-indigo-600">
-                                            <Image src="/images/kayak.png" alt="Kayak" layout="fill" />
+                                            <Image src={kayak} alt="Kayak" layout="fill" placeholder="blur" />
                                         </div>
                                     </div>
                                 </Tween>
@@ -45,9 +53,9 @@ const Greeting = () => {
                                     ease="back.out(1.2)"
                                 >
                                     <div className="absolute bottom-0 right-0 hidden w-48 h-48 lg:block" style={{ transform: 'translate(70%, 40%)' }}>
-                                        <div className="absolute inset-0 rounded-lg shadow-image"><Image src="/images/newt.png" layout="fill" alt="Newt" /></div>
+                                        <div className="absolute inset-0 rounded-lg shadow-image"><Image src={newt} layout="fill" alt="Newt" placeholder="blur" /></div>
                                         <div className="relative w-full h-full overflow-hidden rounded-lg ring-8 ring-indigo-600">
-                                            <Image src="/images/newt.png" alt="Newt" layout="fill" />
+                                            <Image src={newt} alt="Newt" layout="fill" placeholder="blur" />
                                         </div>
                                     </div>
                                 </Tween>
@@ -73,9 +81,9 @@ const Greeting = () => {
                                     ease="back.out(1.2)"
                                 >
                                     <div className="absolute bottom-0 left-0 hidden w-48 h-48 lg:block" style={{ transform: 'translate(-90%,55%)' }}>
-                                        <div className="absolute inset-0 rounded-lg shadow-image"><Image src="/images/kyle-selfie.png" layout="fill" alt="Kyle" /></div>
+                                        <div className="absolute inset-0 rounded-lg shadow-image"><Image src={selfie} layout="fill" alt="Kyle" placeholder="blur" /></div>
                                         <div className="relative w-full h-full overflow-hidden rounded-lg ring-8 ring-indigo-600">
-                                            <Image src="/images/kyle-selfie.png" alt="Kyle" layout="fill" />
+                                            <Image src={selfie} alt="Kyle" layout="fill" placeholder="blur" />
                                         </div>
                                     </div>
                                 </Tween>

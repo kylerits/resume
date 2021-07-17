@@ -27,7 +27,7 @@ export default function Home() {
         <meta data-n-head="ssr" name="twitter:image:src" content="https://kylerodgers.me/images/4k-wallpaper-conifers-desktop-wallpaper-1920x1080.jpg"></meta>
         <meta data-n-head="ssr" name="msapplication-TileColor" content="#6b9686"></meta>
         <meta data-n-head="ssr" name="theme-color" content="#edf6f8"></meta>
-        <meta data-n-head="ssr" data-hid="charset" charset="utf-8"></meta>
+        <meta data-n-head="ssr" data-hid="charset" charSet="utf-8"></meta>
         <meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes"></meta>
         <meta data-n-head="ssr" data-hid="apple-mobile-web-app-title" name="apple-mobile-web-app-title" content="Kyle Rodgers | Resume"></meta>
 
