@@ -83,11 +83,12 @@ const platList = [
     },
 ];
 
+
 const TechTile = () => {
     return (
-        <Reveal>
+        <Reveal threshold={0.1}>
             <Tween
-                from={{ opacity: 0, scale: 1.2, }}
+                from={{ opacity: 0.1, scale: 0.8, }}
                 duration={0.3}
                 delay={0.1}
                 ease="back.out(1.2)"

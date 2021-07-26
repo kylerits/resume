@@ -1,11 +1,20 @@
 import Head from 'next/head'
-import Greeting from '../components/Greeting'
-import Intro from '../components/Intro'
-import Experience from '../components/Experience'
-import Tech from '../components/Tech'
-import Contact from '../components/Contact'
-import Projects from '../components/Projects'
-import PageNav from '../components/PageNav'
+import React, {Suspense} from 'react';
+// import Greeting from '../components/Greeting'
+// import Intro from '../components/Intro'
+// import Experience from '../components/Experience'
+// import Tech from '../components/Tech'
+// import Contact from '../components/Contact'
+// import Projects from '../components/Projects'
+// import PageNav from '../components/PageNav'
+
+const Greeting = React.lazy(() => import('../components/Greeting'));
+const Intro = React.lazy(() => import('../components/Intro'));
+const Experience = React.lazy(() => import('../components/Experience'));
+const Tech = React.lazy(() => import('../components/Tech'));
+const Contact = React.lazy(() => import('../components/Contact'));
+const Projects = React.lazy(() => import('../components/Projects'));
+const PageNav = React.lazy(() => import('../components/PageNav'));
 
 export default function Home() {
   return (
@@ -51,26 +60,28 @@ export default function Home() {
             crossOrigin=""
           />
       </Head>
-      <main id="pageWrap" className="relative pb-12">
-        <div className="absolute top-0 left-0 flex w-full opacity-10 backdrop">
-            {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="text-indigo-600 transform scale-125 -translate-x-24"><path fill="currentColor" d="M0,256L60,224C120,192,240,128,360,112C480,96,600,128,720,138.7C840,149,960,139,1080,112C1200,85,1320,43,1380,21.3L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg> */}
-            <svg id="visual" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" className="text-indigo-600 transform rotate-180"><path d="M0 366L30 369.5C60 373 120 380 180 394.3C240 408.7 300 430.3 360 451.8C420 473.3 480 494.7 540 486.7C600 478.7 660 441.3 720 428C780 414.7 840 425.3 870 430.7L900 436L900 601L870 601C840 601 780 601 720 601C660 601 600 601 540 601C480 601 420 601 360 601C300 601 240 601 180 601C120 601 60 601 30 601L0 601Z" fill="currentColor" strokeLinecap="round" strokeLinejoin="miter"></path></svg>
-        </div>
-        <section id="greeting" className="relative"><Greeting /></section>
-        <section id="intro" className="relative"><Intro /></section>
-        <section id="projects" className="relative"><Projects /></section>
-        <section id="experience" className="relative"><Experience /></section>
-        <section id="tech" className="relative"><Tech /> </section>
-        <section id="contact" className="relative"><Contact /></section>
-
-        {/* Footer */}
-        <footer className="relative block">
-          <div className="mx-auto prose-sm prose">
-            <p className="text-center">All material &copy; Kyle Rodgers 2021</p>
+      <Suspense fallback={<div>Loading...</div>}>
+        <main id="pageWrap" className="relative pb-12">
+          <div className="absolute top-0 left-0 flex w-full opacity-10 backdrop">
+              {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="text-indigo-600 transform scale-125 -translate-x-24"><path fill="currentColor" d="M0,256L60,224C120,192,240,128,360,112C480,96,600,128,720,138.7C840,149,960,139,1080,112C1200,85,1320,43,1380,21.3L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg> */}
+              <svg id="visual" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" className="text-indigo-600 transform rotate-180"><path d="M0 366L30 369.5C60 373 120 380 180 394.3C240 408.7 300 430.3 360 451.8C420 473.3 480 494.7 540 486.7C600 478.7 660 441.3 720 428C780 414.7 840 425.3 870 430.7L900 436L900 601L870 601C840 601 780 601 720 601C660 601 600 601 540 601C480 601 420 601 360 601C300 601 240 601 180 601C120 601 60 601 30 601L0 601Z" fill="currentColor" strokeLinecap="round" strokeLinejoin="miter"></path></svg>
           </div>
-        </footer>
-      </main>
-      <PageNav />
+          <section id="greeting" className="relative"><Greeting /></section>
+          <section id="intro" className="relative"><Intro /></section>
+          <section id="projects" className="relative"><Projects /></section>
+          <section id="experience" className="relative"><Experience /></section>
+          <section id="tech" className="relative"><Tech /> </section>
+          <section id="contact" className="relative"><Contact /></section>
+
+          {/* Footer */}
+          <footer className="relative block">
+            <div className="mx-auto prose-sm prose">
+              <p className="text-center">All material &copy; Kyle Rodgers 2021</p>
+            </div>
+          </footer>
+        </main>
+        <PageNav />
+      </Suspense>
     </>
   );
 }
