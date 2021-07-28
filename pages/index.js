@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import React, {Suspense, useState, useEffect} from 'react';
-import { Puff } from 'svg-loaders-react';
 // import Greeting from '../components/Greeting'
 // import Intro from '../components/Intro'
 // import Experience from '../components/Experience'
@@ -32,9 +31,6 @@ const GuardedLazyComponentToSSR = () => {
 
   return (
     <Suspense fallback={<div className="relative w-screen h-screen overflow-hidden flex flex-col items-center justify-center">
-      <div>
-        <Puff stroke="#EC5B62" strokeOpacity=".225" />
-      </div>
       <p className="text-center text-indigo-700 uppercase tracking-wide text-sm">Loading<br/> Resume</p>
     </div>}>
       <main id="pageWrap" className="relative pb-12">
