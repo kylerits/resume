@@ -31,7 +31,12 @@ const GuardedLazyComponentToSSR = () => {
   if (!isFront) return null;
 
   return (
-    <Suspense fallback={<div className="relative w-screen h-screen overflow-hidden flex items-center justify-center"><Puff stroke="#EC5B62" strokeOpacity=".225" /></div>}>
+    <Suspense fallback={<div className="relative w-screen h-screen overflow-hidden flex flex-col items-center justify-center">
+      <div>
+        <Puff stroke="#EC5B62" strokeOpacity=".225" />
+      </div>
+      <p className="text-center text-indigo-700 uppercase tracking-wide text-sm">Loading<br/> Resume</p>
+    </div>}>
       <main id="pageWrap" className="relative pb-12">
         <div className="absolute top-0 left-0 flex w-full opacity-10 backdrop">
             {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="text-indigo-600 transform scale-125 -translate-x-24"><path fill="currentColor" d="M0,256L60,224C120,192,240,128,360,112C480,96,600,128,720,138.7C840,149,960,139,1080,112C1200,85,1320,43,1380,21.3L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg> */}
