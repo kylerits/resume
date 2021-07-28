@@ -67,7 +67,7 @@ const Greeting = () => {
                                     ease="back.out(1.2)"
                                 >
                                     <div className="relative max-w-2xl p-10 mx-auto bg-white shadow-xl bg-opacity-80 rounded-2xl bg-blur">
-                                        <Tooltip content={"“General Kinobe!”"} direction='right'><h1 className="pb-2"><span className="text-5xl font-bold lg:text-7xl">Hello there.</span></h1></Tooltip>
+                                        <Tooltip content={"“General Kinobe!”"} direction='right'><h1 className="pb-2"><span className="text-5xl font-bold lg:text-7xl text-indigo-700">Hello there.</span></h1></Tooltip>
                                         <div className="prose">
                                             <p className="lead">My name is Kyle Rodgers. I spend most of my life in front of a computer screen. Some of that time is spent building things.</p>
                                         </div>

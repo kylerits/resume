@@ -16,11 +16,11 @@ module.exports = {
               },
             },
             a: {
-              color: theme('colors.red.600'),
+              color: theme('colors.red.700'),
               fontWeight: 'bold',
               transition: 'all 300ms',
               '&:hover': {
-                color: theme('colors.red.700'),
+                color: theme('colors.red.800'),
               }
             }
           }]
