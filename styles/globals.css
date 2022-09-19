@@ -1,113 +1,129 @@
-@import 'tooltip.css';
+@import "tooltip.css";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  @font-face {
-    font-family: 'EBGaramond';
-    src: url('/fonts/EBGaramond/EBGaramond-VariableFont_wght.ttf') format("truetype-variations");
-    font-style: normal;
-    font-weight: 1 999;
-  }
-  @font-face {
-    font-family: 'EBGaramond';
-    src: url('/fonts/EBGaramond/EBGaramond-Italic-VariableFont_wght.ttf') format("truetype-variations");
-    font-style: italic;
-    font-weight: 1 999;
-  }
-  body {
-    background: theme('colors.gray.50');
-    color: theme('colors.gray.800');
-  }
+	@font-face {
+		font-family: "EBGaramond";
+		src: url("/fonts/EBGaramond/EBGaramond-VariableFont_wght.ttf")
+			format("truetype-variations");
+		font-style: normal;
+		font-weight: 1 999;
+	}
+	@font-face {
+		font-family: "EBGaramond";
+		src: url("/fonts/EBGaramond/EBGaramond-Italic-VariableFont_wght.ttf")
+			format("truetype-variations");
+		font-style: italic;
+		font-weight: 1 999;
+	}
+	body {
+		background: theme("colors.gray.50");
+		color: theme("colors.gray.800");
+	}
 }
 
 @layer components {
-  @screen lg {
-    .timeline {
-      position: absolute;
-      display: block;
-      overflow: visible;
-      right: 0;
-      top: 50%;
-      width: 150vw;
-      height: 0;
-      transform: translateY(-50%) translateX(-1rem);
-      border-bottom: solid theme('borderWidth.2') theme('borderColor.green.600');
-    }
-    .timeline::before {
-      content: '7 years and counting';
-      position: absolute;
-      display: inline-block;
-      font-size: theme('fontSize.xs');
-      text-transform: uppercase;
-      font-family: theme('fontFamily.serif');
-      font-style: italic;
-      color: theme('colors.green.700');
-      background: theme('colors.gray.50');
-      font-weight: bold;
-      letter-spacing: 0.8px;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%) translateX(50%) rotate(90deg);
-      padding: theme('spacing.1');
-      border-bottom: solid theme('borderWidth.2') theme('borderColor.green.600');
-    }
-  }
-  /* Spy Link */
-  .spy-link {
-    width: 2rem;
-    transition: all 200ms;
-  }
-  .spy-link .spy-line {
-    width: 100%;
-    height: 0;
-    border-bottom: solid 1px theme('colors.red.700');
-    transition: all 300ms;
-  }
-  .spy-link.is-current {
-    width: 3.5rem;
-    color: theme('colors.red.700');
-  }
-  .spy-link.is-current .spy-line-before {
-    width: 0;
-  }
-  .spy-link.is-current .spy-line-after {
-    width: 100%;
-  }
+	@screen lg {
+		.timeline {
+			position: absolute;
+			display: block;
+			overflow: visible;
+			right: 0;
+			top: 50%;
+			width: 150vw;
+			height: 0;
+			transform: translateY(-50%) translateX(-1rem);
+			border-bottom: solid theme("borderWidth.2") theme("borderColor.green.600");
+		}
+		.timeline::before {
+			content: "Nearly a decade and counting";
+			position: absolute;
+			display: inline-block;
+			font-size: theme("fontSize.xs");
+			text-transform: uppercase;
+			font-family: theme("fontFamily.serif");
+			font-style: italic;
+			color: theme("colors.green.700");
+			background: theme("colors.gray.50");
+			font-weight: bold;
+			letter-spacing: 0.8px;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%) translateX(50%) rotate(90deg);
+			padding: theme("spacing.1");
+			border-bottom: solid theme("borderWidth.2") theme("borderColor.green.600");
+		}
+	}
+	/* Spy Link */
+	.spy-link {
+		width: 2rem;
+		transition: all 200ms;
+	}
+	.spy-link .spy-line {
+		width: 100%;
+		height: 0;
+		border-bottom: solid 1px theme("colors.red.700");
+		transition: all 300ms;
+	}
+	.spy-link.is-current {
+		width: 3.5rem;
+		color: theme("colors.red.700");
+	}
+	.spy-link.is-current .spy-line-before {
+		width: 0;
+	}
+	.spy-link.is-current .spy-line-after {
+		width: 100%;
+	}
 }
 
 @layer utilities {
-  .bg-blur {
-    backdrop-filter: blur(5px);
-  }
-  .bg-gradient-overlay {
-      background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5), rgba(0,0,0,0.6), rgba(0,0,0,0.8), rgba(0,0,0,0.9) );
-    }
-  @screen lg {
-    .bg-gradient-overlay {
-      background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.2), rgba(0,0,0,0.3), rgba(0,0,0,0.6), rgba(0,0,0,0.7) );
-    }
-  }
-  .shadow-image {
-    filter: blur(30px);
-    transform: scale(0.9) translateY(0.5rem);
-  }
-  .drop-cap {
-    float: left;
-    font-size: theme('fontSize.6xl');
-    font-weight: theme('fontWeight.bold');
-    line-height: 0.9;
-    padding-right: theme('spacing.2');
-  }
-  .columns-2 {
-    column-count: 1;
-    column-gap: theme('spacing.12');
-  }
-  @screen lg {
-    .columns-2 {
-      column-count: 2;
-    }
-  }
+	.bg-blur {
+		backdrop-filter: blur(5px);
+	}
+	.bg-gradient-overlay {
+		background: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.3),
+			rgba(0, 0, 0, 0.5),
+			rgba(0, 0, 0, 0.6),
+			rgba(0, 0, 0, 0.8),
+			rgba(0, 0, 0, 0.9)
+		);
+	}
+	@screen lg {
+		.bg-gradient-overlay {
+			background: linear-gradient(
+				to bottom,
+				rgba(0, 0, 0, 0.1),
+				rgba(0, 0, 0, 0.2),
+				rgba(0, 0, 0, 0.3),
+				rgba(0, 0, 0, 0.6),
+				rgba(0, 0, 0, 0.7)
+			);
+		}
+	}
+	.shadow-image {
+		filter: blur(30px);
+		transform: scale(0.9) translateY(0.5rem);
+	}
+	.drop-cap {
+		float: left;
+		font-size: theme("fontSize.6xl");
+		font-weight: theme("fontWeight.bold");
+		line-height: 0.9;
+		padding-right: theme("spacing.2");
+	}
+	.columns-2 {
+		column-count: 1;
+		column-gap: theme("spacing.12");
+	}
+	@screen lg {
+		.columns-2 {
+			column-count: 2;
+		}
+	}
 }

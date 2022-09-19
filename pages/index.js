@@ -48,7 +48,7 @@ const GuardedLazyComponentToSSR = () => {
         {/* Footer */}
         <footer className="relative block">
           <div className="mx-auto prose-sm prose">
-            <p className="text-center">All material &copy; Kyle Rodgers 2021</p>
+            <p className="text-center">All material &copy; Kyle Rodgers 2022</p>
           </div>
         </footer>
       </main>
