@@ -2,32 +2,46 @@ import ProjectsList from "./ProjectsList";
 
 const list = [
     {
+        title: 'Village Pub',
+        company: 'Freelance',
+        url: 'https://nice-sprites.vercel.app/',
+        image: 'villagePub',
+        desc: 'Frontend cut of a larger eCommerce project.'
+    },
+    {
+        title: 'Nice Sprites',
+        company: 'built for fun',
+        url: 'https://nice-sprites.vercel.app/',
+        image: 'niceSprites',
+        desc: 'React app to build and export svg pixel art.'
+    },
+    {
         title: 'Agency Portfolio',
         company: 'BIG [Brand Innovation Group]',
         url: 'https://www.gotobig.com/',
         image: 'bigMeta',
-        desc: '',
+        desc: 'Portfolio to display a wide breadth of brand work.',
     },
     {
         title: 'Partnership Website',
         company: 'The Lutheran Schools Partnership',
         url: 'https://www.thelutheranschools.org/',
         image: 'tlspMeta',
-        desc: '',
+        desc: 'Information hub for local schools.',
     },
     {
         title: 'Breads to Live By.',
         company: 'Aunt Millie‘s',
         url: 'https://live.auntmillies.com/',
         image: 'amlMeta',
-        desc: '',
+        desc: 'Brand campaign website to promote a new product.',
     },
     {
         title: 'Look Up',
         company: 'The Lutheran Foundation',
         url: 'https://lookupindiana.org/',
         image: 'lookupMeta',
-        desc: '',
+        desc: 'Marketing website and collaborative platform for regional social service providers.',
     },
 ];
 
