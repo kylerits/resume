@@ -4,7 +4,7 @@ const list = [
     {
         title: 'Village Pub',
         company: 'Freelance',
-        url: 'https://nice-sprites.vercel.app/',
+        url: 'https://village-pub.vercel.app/',
         image: 'villagePub',
         desc: 'Frontend cut of a larger eCommerce project.'
     },
