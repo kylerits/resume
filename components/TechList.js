@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 import Tooltip from './Tooltip';
 
 const TechList = (props) => {
@@ -11,7 +11,16 @@ const TechList = (props) => {
                     return (
                         <li key={key} className="inline-flex items-center justify-center p-4 mb-6 mr-6 bg-white border border-indigo-300 shadow-sm rounded-xl">
                             <Tooltip content={item.title} direction="bottom">
-                                <Image src={item.iconPath ? item.iconPath : '/icons/empty.svg'} alt={item.title} width={70} height={70} className="block opacity-80" />
+                                <Image
+                                    src={item.iconPath ? item.iconPath : '/icons/empty.svg'}
+                                    alt={item.title}
+                                    width={70}
+                                    height={70}
+                                    className="block opacity-80"
+                                    style={{
+                                        maxWidth: "100%",
+                                        height: "auto"
+                                    }} />
                             </Tooltip>
                         </li>
                     );

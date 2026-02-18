@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 import { Reveal, Tween } from 'react-gsap';
 // import { Parallax, Background } from 'react-parallax';
 import Tooltip from './Tooltip';
@@ -12,7 +12,7 @@ import selfie from '../public/images/kyle-selfie.png';
 
 
 const Greeting = () => {
-    return ( 
+    return (
         <div className="relative">
             <div className="container relative py-10 lg:py-16">
                 <div className="flex flex-wrap items-center justify-center" style={{ minHeight: '40vh' }}>
@@ -27,9 +27,9 @@ const Greeting = () => {
                                     ease="back.out(1.2)"
                                 >
                                     <div className="absolute top-0 left-0 hidden w-40 h-40 lg:block " style={{ transform: 'translate(-20%, -70%)' }}>
-                                        <div className="absolute inset-0 rounded-lg shadow-image"><Image src={winter} layout="fill" alt="Winter" placeholder="blur" /></div>
+                                        <div className="absolute inset-0 rounded-lg shadow-image"><Image src={winter} alt="Winter" placeholder="blur" fill sizes="100vw" /></div>
                                         <div className="relative w-full h-full overflow-hidden rounded-lg ring-8 ring-indigo-600">
-                                            <Image src={winter} alt="Winter" layout="fill" placeholder="blur" />
+                                            <Image src={winter} alt="Winter" placeholder="blur" fill sizes="100vw" />
                                         </div>
                                     </div>
                                 </Tween>
@@ -40,9 +40,9 @@ const Greeting = () => {
                                     ease="back.out(1.2)"
                                 >
                                     <div className="absolute top-0 hidden w-48 h-48 lg:block left-1/2" style={{ transform: 'translate(50px, -130px)' }}>
-                                        <div className="absolute inset-0 rounded-lg shadow-image"><Image src={kayak} layout="fill" alt="Kayak" /></div>
+                                        <div className="absolute inset-0 rounded-lg shadow-image"><Image src={kayak} alt="Kayak" fill sizes="100vw" /></div>
                                         <div className="relative w-full h-full overflow-hidden rounded-lg ring-8 ring-indigo-600">
-                                            <Image src={kayak} alt="Kayak" layout="fill" placeholder="blur" />
+                                            <Image src={kayak} alt="Kayak" placeholder="blur" fill sizes="100vw" />
                                         </div>
                                     </div>
                                 </Tween>
@@ -53,9 +53,9 @@ const Greeting = () => {
                                     ease="back.out(1.2)"
                                 >
                                     <div className="absolute bottom-0 right-0 hidden w-48 h-48 lg:block" style={{ transform: 'translate(70%, 40%)' }}>
-                                        <div className="absolute inset-0 rounded-lg shadow-image"><Image src={newt} layout="fill" alt="Newt" placeholder="blur" /></div>
+                                        <div className="absolute inset-0 rounded-lg shadow-image"><Image src={newt} alt="Newt" placeholder="blur" fill sizes="100vw" /></div>
                                         <div className="relative w-full h-full overflow-hidden rounded-lg ring-8 ring-indigo-600">
-                                            <Image src={newt} alt="Newt" layout="fill" placeholder="blur" />
+                                            <Image src={newt} alt="Newt" placeholder="blur" fill sizes="100vw" />
                                         </div>
                                     </div>
                                 </Tween>
@@ -81,9 +81,9 @@ const Greeting = () => {
                                     ease="back.out(1.2)"
                                 >
                                     <div className="absolute bottom-0 left-0 hidden w-48 h-48 lg:block" style={{ transform: 'translate(-90%,55%)' }}>
-                                        <div className="absolute inset-0 rounded-lg shadow-image"><Image src={selfie} layout="fill" alt="Kyle" placeholder="blur" /></div>
+                                        <div className="absolute inset-0 rounded-lg shadow-image"><Image src={selfie} alt="Kyle" placeholder="blur" fill sizes="100vw" /></div>
                                         <div className="relative w-full h-full overflow-hidden rounded-lg ring-8 ring-indigo-600">
-                                            <Image src={selfie} alt="Kyle" layout="fill" placeholder="blur" />
+                                            <Image src={selfie} alt="Kyle" placeholder="blur" fill sizes="100vw" />
                                         </div>
                                     </div>
                                 </Tween>

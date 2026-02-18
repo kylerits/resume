@@ -1,5 +1,5 @@
 import {Reveal, Tween} from 'react-gsap';
-import Image from 'next/image';
+import Image from "next/image";
 
 import bigMeta from '../public/images/projects/big-meta.jpeg'
 import tlspMeta from '../public/images/projects/tlsp-meta.jpg'
@@ -49,9 +49,21 @@ const ProjectTile = (props) => {
                 >
                     <div className="relative w-full max-w-sm pb-4 pr-4 lg:w-auto tile-wrap lg:pr-8 lg:pb-8">
                         <div className="relative">
-                            {image.length > 0 ? <><div className="absolute inset-0 rounded-lg shadow-image"><Image src={getImage(image)} layout="fill" className="object-cover w-full h-full" alt={title} placeholder="blur" /></div></> : null }
+                            {image.length > 0 ? <><div className="absolute inset-0 rounded-lg shadow-image"><Image
+                                src={getImage(image)}
+                                className="object-cover w-full h-full"
+                                alt={title}
+                                placeholder="blur"
+                                fill
+                                sizes="100vw" /></div></> : null }
                             <a href={url} className="relative block overflow-hidden text-gray-100 duration-300 transform translate-y-0 job-tile rounded-xl bg-opacity-60 bg-blur project-tile hover:-translate-y-2" target="_blank" rel="noreferrer">
-                                {image.length > 0 ? <><div className="absolute inset-0"><Image src={getImage(image)} layout="fill" className="object-cover w-full h-full" alt={title} placeholder="blur" /></div><div className="absolute inset-0 bg-gradient-overlay"></div></> : null}
+                                {image.length > 0 ? <><div className="absolute inset-0"><Image
+                                    src={getImage(image)}
+                                    className="object-cover w-full h-full"
+                                    alt={title}
+                                    placeholder="blur"
+                                    fill
+                                    sizes="100vw" /></div><div className="absolute inset-0 bg-gradient-overlay"></div></> : null}
                                 <div className="relative flex items-end py-8 px-5 lg:w-80 lg:h-72">
                                     <div className="relative block w-full">
                                         <div className="px-4 py-3 rounded-lg bg-gray-500/30 backdrop-blur-sm">
