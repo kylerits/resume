@@ -22,11 +22,14 @@
     "svg-loaders-react": "^2.2.1"
   },
   "devDependencies": {
+    "@types/node": "25.3.0",
+    "@types/react": "19.2.14",
     "autoprefixer": "^10.3.1",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
     "postcss": "^8.3.5",
     "postcss-nested": "^5.0.5",
-    "tailwindcss": "^2.2.4"
+    "tailwindcss": "^2.2.4",
+    "typescript": "5.9.3"
   }
 }
