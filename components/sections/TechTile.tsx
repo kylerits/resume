@@ -4,11 +4,11 @@ import TechList from "./TechList";
 const langList = [
     {
         title: 'TypeScript',
-        iconPath: '/icons/typescript-square.svg',
+        iconPath: '/icons/ts-logo-128.svg',
     },
     {
         title: 'Vite',
-        iconPath: '/icons/vite.svg',
+        iconPath: '/icons/Vite.js.svg',
     },
     {
         title: 'JavaScript ES6+',

@@ -1,3 +1,4 @@
+import { JSX } from "react";
 import JobTile from "./JobTile";
 
 const experience = [
@@ -52,12 +53,12 @@ const experience = [
 	},
 ];
 
-const Experience = () => {
-	const ExperienceLoop = () =>
-		Object.keys(experience).map((key) => (
-			<JobTile key={key} details={experience[key]} index={key} />
-		));
+const ExperienceLoop = (): JSX.Element[] =>
+	Object.keys(experience).map((key) => (
+		<JobTile key={key} details={experience[key]} index={key} />
+	));
 
+const Experience = () => {
 	return (
 		<div className="relative py-10 overflow-hidden lg:py-16">
 			<div className="container">
@@ -66,7 +67,7 @@ const Experience = () => {
 				</h2>
 				<div className="relative flex flex-wrap items-start">
 					<div className="timeline"></div>
-					<ExperienceLoop />
+					{ExperienceLoop()}
 				</div>
 			</div>
 		</div>
