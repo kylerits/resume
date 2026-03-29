@@ -4,10 +4,10 @@ import { Reveal, Tween } from "react-gsap";
 import Tooltip from "./Tooltip";
 
 // Images
-import winter from "../../public/images/winter.png";
+import krbrand from "../../public/images/kr-personal-brand.jpeg";
 import kayak from "../../public/images/kayak.png";
 import newt from "../../public/images/newt.png";
-import selfie from "../../public/images/kyle-selfie.png";
+import selfie from "../../public/images/kyle-selfie.jpg";
 
 const Greeting = () => {
 	return (
@@ -33,8 +33,8 @@ const Greeting = () => {
 									>
 										<div className="absolute inset-0 rounded-lg shadow-image">
 											<Image
-												src={winter}
-												alt="Winter"
+												src={newt}
+												alt="Newt"
 												placeholder="blur"
 												fill
 												sizes="100vw"
@@ -42,8 +42,8 @@ const Greeting = () => {
 										</div>
 										<div className="relative w-full h-full overflow-hidden rounded-lg ring-8 ring-indigo-600">
 											<Image
-												src={winter}
-												alt="Winter"
+												src={newt}
+												alt="Newt"
 												placeholder="blur"
 												fill
 												sizes="100vw"
@@ -87,8 +87,8 @@ const Greeting = () => {
 									>
 										<div className="absolute inset-0 rounded-lg shadow-image">
 											<Image
-												src={newt}
-												alt="Newt"
+												src={krbrand}
+												alt="KR Brand"
 												placeholder="blur"
 												fill
 												sizes="100vw"
@@ -96,8 +96,8 @@ const Greeting = () => {
 										</div>
 										<div className="relative w-full h-full overflow-hidden rounded-lg ring-8 ring-indigo-600">
 											<Image
-												src={newt}
-												alt="Newt"
+												src={krbrand}
+												alt="KR Brand"
 												placeholder="blur"
 												fill
 												sizes="100vw"
