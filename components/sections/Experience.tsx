@@ -2,11 +2,20 @@ import JobTile from "./JobTile";
 
 const experience = [
 	{
+		title: "UI Engineer",
+		company: "Apple",
+		companyUrl: "https://apple.com/",
+		timeStart: "October 2023",
+		timeEnd: "Present",
+		location: "Austin, TX (Remote)",
+		description: "Joining the Apple IS&T team to work on internal coaching software used by Apple Care and other teams across the company. I contribute to the development of UI/UX solutions that enhance the user experience and remain accessible to all users. I am excited to be a part of a team that values innovation and creativity, and I look forward to contributing my skills and expertise to help drive the success of Apple IS&T.",
+	},
+	{
 		title: "Senior Frontend Developer",
 		company: "Ruoff Mortgage",
 		companyUrl: "https://ruoff.com/",
 		timeStart: "Jan 2022",
-		timeEnd: "Present",
+		timeEnd: "October 2023",
 		location: "Fort Wayne, IN",
 		description:
 			"Leading projects like bespoke UI kit to match current Ruoff brand and accessibility standards and a loan comparison tool available to hundreds of loan officers, I strive to leave a positive impact on my team and Ruoff as a whole.",
